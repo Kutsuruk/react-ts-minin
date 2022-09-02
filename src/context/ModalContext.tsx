@@ -1,4 +1,4 @@
-import {createContext} from "react";
+import {createContext, ReactNode, useState} from "react";
 
 interface IModalContext {
     modal: boolean,
@@ -12,10 +12,15 @@ export const ModalContext = createContext<IModalContext>({
     close: () => {},
 })
 
-export const ModalState = () => {
-    return(
-        <div>
+export const ModalState = ({children}: {children: ReactNode}) => {
+    const [modal, setModal] = useState(false)
 
-        </div>
+    const open = () => setModal(true)
+    const close = () => setModal(false)
+
+    return(
+        <ModalContext.Provider value={{modal, open, close}}>
+            {children}
+        </ModalContext.Provider>
     )
 }
