@@ -10011,7 +10011,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"postcss@npm:^8.3.5, postcss@npm:^8.4.14, postcss@npm:^8.4.4, postcss@npm:^8.4.7":
+"postcss@npm:^8.3.5, postcss@npm:^8.4.14, postcss@npm:^8.4.16, postcss@npm:^8.4.4, postcss@npm:^8.4.7":
   version: 8.4.16
   resolution: "postcss@npm:8.4.16"
   dependencies:
@@ -10410,9 +10410,12 @@ __metadata:
     "@types/node": ^16.7.13
     "@types/react": ^18.0.0
     "@types/react-dom": ^18.0.0
+    autoprefixer: ^10.4.8
+    postcss: ^8.4.16
     react: ^18.2.0
     react-dom: ^18.2.0
     react-scripts: 5.0.1
+    tailwindcss: ^3.1.8
     typescript: ^4.4.2
     web-vitals: ^2.1.0
   languageName: unknown
@@ -11581,7 +11584,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"tailwindcss@npm:^3.0.2":
+"tailwindcss@npm:^3.0.2, tailwindcss@npm:^3.1.8":
   version: 3.1.8
   resolution: "tailwindcss@npm:3.1.8"
   dependencies:
